@@ -27,6 +27,7 @@ li a {
   display: flex;
   justify-content: flex-end;
   width: 90%;
+
 }
 
 .grid-container {
@@ -39,28 +40,44 @@ li a {
 h1{
   color: rgb(241, 186, 5);
 }
+.home-description {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
 .item2 h1 {
   color:  rgb(241, 186, 5);
   font-family: pacifico, cursive;
 }
 .item2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 350px; 
 }
-.item1 img {
+/*.item1 img {
   border: 5px solid #f3a108; 
   border-radius: 100px;        
   overflow: hidden;
-  
-}
+}*/
 .item1 {
   display: flex;
   justify-content: flex-end; 
   align-items: center;      
   height: 350px;             
 }
+.welcome-video {
+  border: 5px solid #000000;  
+  border-radius: 20px;        
+  object-fit: cover;
+  margin-top: 80px;      
+}
+
 /*Menu*/
 .h3{
   color: rgb(241, 186, 5);
@@ -71,18 +88,18 @@ h1{
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 10px;
 }
-.menu-item img {
+/*.menu-item img {
   width: 200px;
   height: 200px;
   display: block;
   border-radius: 10px;
-}
+}*/
 .burger img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   display: block;
   border: black solid 2px;
@@ -103,8 +120,28 @@ h1{
 }
 .food-card {
   text-align: center;
-} 
+}
+
+.promo-badge{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translateX(225%);
+  background: #026eeb;
+  color: #000000;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.5rem;
+ 
+ 
+}
 .food-img-bg {
+  position: relative;
+ 
+}
+.food-img-bg {
+  position: relative;
   background-color: #f3a108;
   width: 250px;
   height: 250px;
@@ -145,7 +182,7 @@ h1{
   justify-content: center;
 }
 h3 {
-  font-family: pacifico, cursive;
+  font-family:'Oswald', sans-serif;
   text-align: center;
 }
 .services {
@@ -163,7 +200,6 @@ h3 {
 }
 .service-card:hover {
   background-color: #f7f7f7;
-  transform: translateY(-5px);
   cursor: pointer
 
 }
@@ -214,3 +250,24 @@ h2{
   border-radius: 5px;
   font-size: 1rem;
 }
+
+/*Media Queries*/
+/*@media (max-width: 600px) {
+  .burger img,
+  .pizza img,
+  .pasta img 
+   width: 150px;
+   height: 150px; 
+  }
+
+ .food-img-bg {
+    width: 180px;
+    height: 180px;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  li a {
+    padding: 5px;
+  }*/
+

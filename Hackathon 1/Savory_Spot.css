@@ -52,7 +52,6 @@ h1{
   text-align: center;
   padding: 20px 0;
 }
-
 .item2 h1 {
   color:  rgb(241, 186, 5);
   font-family: pacifico, cursive;
@@ -110,7 +109,8 @@ h1{
   text-align: center
 }
 .food-card {
-  text-align: center;
+  text-align: center; 
+   margin: 50px;
 }
 .promo-badge{
   position: absolute;
@@ -235,48 +235,84 @@ h2{
   border-radius: 5px;
   font-size: 1rem;
 }
-/*Media Queries*/
-/*@media (max-width: 600px) {
-  .burger img,
-  .pizza img,
-  .pasta img {
-   width: 150px;
-   height: 150px; 
-  }
-
- .food-img-bg {
-    width: 180px;
-    height: 180px;
-  }
-  h1, h2 {
-    font-size: 1.5rem;
-  }
-  li a {
-    padding: 5px;
-   }
-}
-  @media (max-width: 768px) {
+@media (max-width: 600px) {
   .test1 {
     flex-direction: column;
     align-items: center;
-   
   }
-   .test1 ul {
-    padding: 0;
-    margin: 0;
+  .test-left-buttons ul,
+  .test-right-buttons ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-.test1 li {
-    display: block;
+.burger, .pizza, .pasta {
+    flex-direction: column;
+    align-items: center;
+}
+  .food-card{
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px auto;
+  } 
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+.item1, .item2 {
+    width: 100%;
     text-align: center;
   }
-
-  .test1 a {
-    padding: 10px 0;
-    display: block;
+  .welcome-video {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
   }
-nav.navbar {
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
- }
-}*/
+  .services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+}
+@media (max-width: 900px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+.test1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .test-left-buttons ul,
+  .test-right-buttons ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+.burger, .pizza, .pasta {
+    flex-direction: column;
+    align-items: center;
+}
+  .food-card{
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px auto;
+  } 
+ .item1, .item2 {
+    width: 100%;
+    text-align: center;
+  }
+  .welcome-video {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

@@ -1,3 +1,4 @@
+/*background section*/
 .background-overlay {
     background-image: url('backgroundimage.jpg');
     background-size: cover;
@@ -10,6 +11,7 @@
     opacity: 0.3;
     z-index: -1;
 }
+/* #region navbar */
 li {
   display: inline-block;
 }
@@ -20,14 +22,14 @@ li a {
   padding: 10px 15px;
   text-decoration: none;
 }
-.test1 {
+.nav-content {
   display: flex;
   justify-content: space-between;
   width: 98%;
   align-items: center;
 }
-.test-left-buttons ul,
-.test-right-buttons ul {
+.left-content ul,
+.right-content ul {
   display: flex;
   gap: 10px;
   list-style: none;
@@ -35,13 +37,15 @@ li a {
   padding: 0;
   align-items: center;
 }
+/* #endregion navbar */
+/* #region welcome section */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
   padding: 10px; 
 } 
-h1{
+#home{
   color: rgb(241, 186, 5);
 }
 .home-description {
@@ -75,9 +79,9 @@ h1{
   object-fit: cover;
   margin-top: 80px;      
 }
-.h3{
-  color: rgb(241, 186, 5);
-  font-family: pacifico, cursive;
+/* #endregion welcome section */
+/* #region menu section */
+.menu-items h3{
   text-align: center;
 }
 .food-card img {
@@ -168,9 +172,15 @@ h1{
   gap: 20px;
   justify-content: center;
 }
+/* #endregion menu section */
+/* #region services */
 h3 {
   font-family:'Oswald', sans-serif;
   text-align: center;
+}
+.service-card:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
 }
 .services {
   display: flex;
@@ -184,10 +194,8 @@ h3 {
   padding: 30px 20px;
   border-radius: 8px;
 }
-.service-card:hover {
-  background-color: #f7f7f7;
-  cursor: pointer;
-}
+/* #endregion services */
+/* #region reviews */
 h2{
   text-align: center;
   font-family: pacifico, cursive;
@@ -209,6 +217,8 @@ h2{
 .reviews-phrases{
   font-style: italic;
 }
+/* #endregion reviews */
+/* #region booking section */
 .booking-section {
   background-color: #0c0c2b; 
   color: white;
@@ -235,13 +245,15 @@ h2{
   border-radius: 5px;
   font-size: 1rem;
 }
+/* #endregion booking section*/
+/* #region media queries */
 @media (max-width: 600px) {
-  .test1 {
+  .nav-content {
     flex-direction: column;
     align-items: center;
   }
-  .test-left-buttons ul,
-  .test-right-buttons ul {
+  .left-content ul,
+  .right-content ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -287,12 +299,12 @@ h2{
     align-items: center; 
   }
 
-.test1 {
+.nav-content {
     flex-direction: column;
     align-items: center;
   }
-  .test-left-buttons ul,
-  .test-right-buttons ul {
+  .left-content ul,
+  .right-content ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -316,3 +328,4 @@ h2{
     margin: 0 auto;
   }
 }
+/* #endregion  media queries*/
